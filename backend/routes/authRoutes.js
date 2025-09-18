@@ -1,11 +1,11 @@
-const express = require('express');               // Import Express router
-const { signup, login } = require('../controllers/authController'); // Import auth logic
-const router = express.Router();                  // Create router instance
+const express = require('express');
+const { signup, login, me } = require('../controllers/authController');
+const authMiddleware = require('../middleware/authMiddleware');
 
-// Signup route: create new user
+const router = express.Router();
+
 router.post('/signup', signup);
-
-// Login route: authenticate user and return JWT
 router.post('/login', login);
+router.get('/me', authMiddleware, me);
 
-module.exports = router;                          // Export router to use in index.js
+module.exports = router;
