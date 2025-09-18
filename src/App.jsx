@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import { AuthContext, AuthProvider } from './context/AuthContext.jsx';
 import Home from './pages/Home.jsx';
@@ -33,7 +33,7 @@ function ProtectedRoute({ children, roles }) {
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="min-h-screen bg-slate-50">
           <Navbar />
           <main className="mx-auto max-w-6xl px-4 py-8">
@@ -61,7 +61,7 @@ export default function App() {
             </Routes>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   );
 }
