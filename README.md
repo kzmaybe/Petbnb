@@ -56,22 +56,5 @@ npm run preview
 The compiled assets are written to `dist/`. The preview server serves the production build so you can validate everything
 before deploying.
 
-## Deploy to GitHub Pages
-
-A deployment script is included to publish the static build to a `gh-pages` branch.
-
-1. Make sure your project has a GitHub remote set up and your working tree is clean.
-2. Run the deploy script:
-   ```bash
-   npm run deploy
-   ```
-   This runs `npm run build` and uses [gh-pages](https://github.com/tschaub/gh-pages) to push the contents of `dist/` to
-a `gh-pages` branch. Because the app now uses hash-based routing, refreshes work on GitHub Pages without additional
-server rules.
-3. In your repository’s **Settings → Pages**, choose the `gh-pages` branch and save.
-4. Within a minute or two GitHub will serve the site at `https://<your-username>.github.io/<repository-name>/`.
-
-If you ever need to redeploy, rerun `npm run deploy`. To reset your local demo data, clear the `petbnb:data` key from
-the browser’s storage inspector.
 
 Happy hosting! 🐶
