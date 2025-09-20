@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <script>
-  (function() {
-      var redirect = sessionStorage.redirect;
-      if (redirect) {
-        delete sessionStorage.redirect;
-        if (redirect !== "/" && redirect !== "/index.html") {
-          history.replaceState(null, null, redirect);
-        }
-      }
-     })();
-  </script>
+
 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetBnB</title>
+      <script>
+        (function() {
+            var redirect = sessionStorage.redirect;
+            if (redirect) {
+              delete sessionStorage.redirect;
+              if (redirect !== "/" && redirect !== "/index.html") {
+                history.replaceState(null, null, redirect);
+              }
+            }
+          })();
+      </script>
   </head>
   <body>
     <div id="root"></div>
