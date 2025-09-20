@@ -2,7 +2,7 @@
   "name": "petbnb",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://kzmaybe.github.io/petbnb", 
+  "homepage": "https://kzmaybe.github.io/Petbnb", 
   "type": "module",
   "scripts": {
     "dev": "vite",
