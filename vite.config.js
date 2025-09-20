@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './',
+  base: '/petbnb/',
   esbuild: {
     jsx: 'automatic'
   },

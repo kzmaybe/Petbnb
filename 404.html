@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script>
+      
+      var repo = "/petbnb"; 
+
+      // Save path to sessionStorage
+      var redirect = window.location.pathname.replace(repo, "");
+      sessionStorage.redirect = redirect + window.location.search + window.location.hash;
+
+      // Redirect to index.html at repo root
+      window.location.href = repo + "/";
+    </script>
+  </head>
+  <body></body>
+</html>
