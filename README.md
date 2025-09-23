@@ -4,6 +4,7 @@ PetBnB is a React app that runs entirely in the browser. The app showcases what 
 marketplace could look like—owners can explore curated listings, request stays, and track approvals while sitters manage
 their profile and respond to incoming bookings. All data is stored in `localStorage`, so you can explore every workflow
 without setting up an API or database.
+![Demo Screenshot](demo.png)
 
 ## Highlights
 
